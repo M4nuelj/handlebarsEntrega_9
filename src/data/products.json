@@ -1,0 +1,22 @@
+[
+  {
+    "id": "010d3e58-fbe3-42c9-870a-467307a3fe31",
+    "title": "Orange",
+    "description": "Fruit",
+    "code": "ABC23",
+    "price": 1200,
+    "stock": 12,
+    "category": "Fruit",
+    "thumbnail": "NA"
+  },
+  {
+    "id": "a10ac8e7-c4be-4708-92cf-fa55382f35d4",
+    "title": "Orange",
+    "description": "Fruit",
+    "code": "ABC25",
+    "price": 1200,
+    "stock": 12,
+    "category": "Fruit",
+    "thumbnail": "NA"
+  }
+]
