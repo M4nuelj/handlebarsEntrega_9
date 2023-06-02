@@ -1,6 +1,6 @@
-const express=require('express');
+import express from'express';
 const cartsRoute= express.Router();
-const CartManager=require("../carts");
+import CartManager from "../carts";
 const cartManager= new CartManager("data/carts.json");
 
 cartsRoute.post('/', async (req, res)=>{

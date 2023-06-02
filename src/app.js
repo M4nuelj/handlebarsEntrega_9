@@ -1,22 +1,23 @@
-const express=require("express");
+import express from "express";
 const app=express();
 const port=8080;
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-const viewsRouter= require( './routes/views-router.js');
-const { __dirname, __filename } = require('./utils.js') ;
-const handlebars = require('express-handlebars') ;
-const http = require('http') ;
-const { Server: SocketServer } = require('socket.io');
+import viewsRouter from './routes/views-router.js';
+import { __dirname, __filename } from './utils.js' ;
+import handlebars from 'express-handlebars' ;
+import http  from 'http' ;
+import { Server as SocketServer } from 'socket.io';
 const io = new SocketServer(httpServer);
 
-const productRoute=require('./routes/products.route');
+import {productRoute} from './routes/products.route.js';
 app.use('/api/products', productRoute);
 
-const cartsRoute=require('./routes/carts.route');
+import {cartsRoute} from './routes/carts.route.js';
 app.use('/api/carts', cartsRoute);
 
 app.listen(port,()=>{
+
     console.log(`Server runing in the PORT http://localhost:${port}`)
 });
 
